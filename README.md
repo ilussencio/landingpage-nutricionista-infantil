@@ -28,7 +28,7 @@
 
  ### :man_technologist: Dev team:
 
-| [<img src="https://github.com/ilussencio.png?size=460" width=115><br><sub>Luas Ilussencio</sub>](https://github.com/ilussencio) |  [<img src="https://github.com/rodolfocaribe.png?size=460" width=115><br><sub>Rodolfo Ribeiro</sub>](https://github.com/rodolfocaribe) |  [<img src="https://github.com/ezequielos.png?size=460" width=115><br><sub>Ezequiel Oliveira</sub>](https://github.com/EzequielOS) |
+| [<img src="https://github.com/ilussencio.png?size=460" width=115><br><sub>Lucas Ilussencio</sub>](https://github.com/ilussencio) |  [<img src="https://github.com/rodolfocaribe.png?size=460" width=115><br><sub>Rodolfo Ribeiro</sub>](https://github.com/rodolfocaribe) |  [<img src="https://github.com/ezequielos.png?size=460" width=115><br><sub>Ezequiel Oliveira</sub>](https://github.com/EzequielOS) |
 | :---: | :---: | :---: 
 <br>
 
