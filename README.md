@@ -4,7 +4,7 @@
 <BR>
 
 ### DESCRIÇÃO DO PROJETO
-<p  align="justify">Este projeto foi desenvolvido por alunos do 3º Período do Curso Superior Tecnológico de Sistemas Para Internet, do Instituto Federal do Triangulo Mineiro - IFTM, campus Uberlândia-Centro, onde através de uma <a  href="https://iftm.edu.br/editais/projetos-de-ensino-pesquisa-e-extensao/apoio-a-projetos-de-extensao/20230330/chamada-publica-30-03-2023-edital-recebimento-de-demandas-da-comunidade-externa-para-proposicao-de-solucoes-basead/" target="_blank">chamada pública</a>, oito propostas da comunidade externa foram selecionadas, cabendo a este grupo a elaboração de uma página web do tipo *landing page* para a Sra Sabrina Penido, Nutricionista Infantil.
+<p  align="justify">Este projeto foi desenvolvido por alunos do 3º Período do Curso Superior Tecnológico de Sistemas Para Internet, do Instituto Federal do Triangulo Mineiro - IFTM, campus Uberlândia-Centro, onde através de uma <a  href="https://iftm.edu.br/editais/projetos-de-ensino-pesquisa-e-extensao/apoio-a-projetos-de-extensao/20230330/chamada-publica-30-03-2023-edital-recebimento-de-demandas-da-comunidade-externa-para-proposicao-de-solucoes-basead/" target="_blank">chamada pública</a>, oito propostas da comunidade externa foram selecionadas, cabendo a este grupo a elaboração de uma página web do tipo <i>landing page</i> para a Sra Sabrina Penido, Nutricionista Infantil.
 
 
 ### O que este website é capaz de fazer:
