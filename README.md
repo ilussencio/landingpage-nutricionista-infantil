@@ -22,7 +22,7 @@
 <br>
 
 ### :keyboard: Tecnologias aplicadas:
-<img src="https://skills.thijs.gg/icons?i=idea,vscode,docker,figma,html,css,js,react" />
+<img src="https://skills.thijs.gg/icons?i=idea,vscode,docker,figma,github,html,css,js,react" />
 <br>
 <br>
 
