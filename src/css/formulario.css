@@ -39,7 +39,7 @@
     width: 100%;
     margin-bottom: 10px;
 }
-.section-formulario input{ 
+.section-formulario input .ddi .numero{ 
     width: 100%;
     padding: 20px;
     height: 52px;
@@ -77,4 +77,11 @@
     .section-formulario .titulo-subtitulo {
         width: 400px;
     }
+}
+
+.section-formulario .error{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
