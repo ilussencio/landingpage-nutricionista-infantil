@@ -3,11 +3,12 @@ import TituloSubtitulo from "../common/TituloSubtitulo"
 import titulosDescricoesSecoes from "../../../js/titulosDescricoesSecoes"
 import emailjs from '@emailjs/browser'
 
+
 export default function Formulario() {
     const [nome, setNome] = useState("");
     const [email, setEmail] = useState("");
     const [telefone, setTelefone] = useState("");
-    const [ddi, setDdi] = useState("");
+    const [ddi, setDdi] = useState("+55");
 
     function validar(){
         if(nome === "" || email === "" || telefone === "" || ddi === ""){
@@ -33,15 +34,36 @@ export default function Formulario() {
     }
 
     return (
-        <section>
-            <TituloSubtitulo titulo={titulosDescricoesSecoes["formulario"].titulo} subtitulo={titulosDescricoesSecoes["formulario"].subtitulo}/>
+        <section className="section-formulario">
+            <TituloSubtitulo
+                titulo={titulosDescricoesSecoes["formulario"].titulo} 
+                subtitulo={titulosDescricoesSecoes["formulario"].subtitulo}
+            />
 
-            <form>
-                <input type="text" placeholder="Nome" value={nome} onChange={(e) => setNome(e.target.value)}/><br />
-                <input type="email" placeholder="E-mail" value={email} onChange={(e) => setEmail(e.target.value)}/><br />
-                <input type="tel" placeholder="Telefone" value={telefone} onChange={(e) => setTelefone(e.target.value)}/><br />
-                <input type="tel" placeholder="DDI" value={ddi} onChange={(e) => setDdi(e.target.value)}/><br />
-                <input type="button" value="Enviar" onClick={() => validar()} />
+            <form className="form">
+                <div className="input">
+                    <label htmlFor="nome">Nome*</label>
+                    <input type="text" value={nome} onChange={(e) => setNome(e.target.value)}/>
+                </div>
+
+                <div className="input">
+                    <label htmlFor="email">E-mail*</label>
+                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                </div>
+
+                <div className="telefone">
+                    <div className="input" className="ddi">
+                        <label htmlFor="telefone">DDI*</label>
+                        <input type="tel" value={ddi} onChange={(e) => setDdi(e.target.value)}/>
+                    </div>
+
+                    <div className="input" className="numero">
+                        <label htmlFor="telefone">Telefone*</label>
+                        <input type="tel" value={telefone} onChange={(e) => setTelefone(e.target.value)}/>
+                    </div>
+                </div>
+
+                <input className="button" type="button" value="ENVIAR" onClick={() => validar()} />
             </form>
         </section>
     )
