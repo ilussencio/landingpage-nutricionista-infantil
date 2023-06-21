@@ -1,16 +1,27 @@
 .section-formulario {
     height: 900px;
-    background-image: url(../assets/menica-com-legumes-grande.jpg);
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 0px;
+    background-color: #FBECE8;
+    background-image: url(../assets/menica-com-legumes-grande.jpg);
+    background-repeat: no-repeat;
+    background-position: -200px 0px;
 }
+
+.container-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+
 .section-formulario .subtitulo{
     color: white;
-    width: 400px;
+    font-weight: bold;
+   
 }
 .section-formulario .titulo-subtitulo {
     display: flex;
@@ -21,25 +32,34 @@
     line-height: 180%;
     text-align: center;
     font-size: 25px;
-    
+
 }
 .section-formulario .form{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px 15px 30px 15px;
+    margin-top: 50px;
     background-color: #E18168;
     border-radius: 10px;
-    margin-top: 100px;
 }
 .section-formulario label{
     color: white;
+}
+.section-formulario input{
+    width: 100%;
+    padding: 20px;
+    height: 52px;
+    border: none;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: #EEF5F0;
 }
 .section-formulario .input{
     width: 100%;
     margin-bottom: 10px;
 }
-.section-formulario input .ddi .numero{ 
+.section-formulario input .ddi .numero{
     width: 100%;
     padding: 20px;
     height: 52px;
@@ -59,29 +79,50 @@
 .section-formulario .button{
     background-color: #2CB742;
     color: white;
-    font-weight: bold;
+    font-weight: 900;
     margin-top: 25px;
     letter-spacing: 150%;
 }
 
+.section-formulario .error{
+    color: black;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
-@media screen and (min-width: 700px) {
+
+/* Tablet */
+@media screen and (min-width: 480px) and (max-width: 1440px) {
     .section-formulario {
-        background-position: center;
-        padding-right: 300px;
-        align-items: flex-end;
+        background-image: url(../assets/menica-com-legumes-medio.jpg);
+        background-position: -80px 0px;
+    }
+    .container-formulario{
+        align-items: center;
+    }
+    .section-formulario .subtitulo{
+        width: 400px;
     }
     .section-formulario .form{
         width: 400px;
     }
-    .section-formulario .titulo-subtitulo {
-        width: 400px;
-    }
 }
 
-.section-formulario .error{
-    color: red;
-    font-size: 12px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+/* Desktop */
+@media screen and (min-width:1440px) {
+    .section-formulario{
+        background-position: center;
+    }
+    
+    .section-formulario .subtitulo{
+        width: 400px;
+    }
+    .section-formulario .form{
+        width: 400px;
+    }
+    .container-formulario{
+        align-items: flex-end;
+        width: 1000px;
+    }
 }

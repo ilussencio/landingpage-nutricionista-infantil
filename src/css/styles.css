@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -6,86 +8,23 @@
     font-family: 'Inter', sans-serif;
 }
 
-
-Header, footer {
-    border: 1px solid black;
-}
-.section-formulario {
-    height: 900px;
-    background-image: url(../assets/menica-com-legumes-grande.jpg);
-    background-repeat: no-repeat;
+Section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 0px;
 }
-.section-formulario .subtitulo{
-    color: white;
-    width: 400px;
-}
-.section-formulario .titulo-subtitulo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.titulo-subtitulo{
     text-align: center;
-    font-weight: bolder;
-    line-height: 180%;
-    text-align: center;
-    font-size: 25px;
-    
 }
-.section-formulario .form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 15px 30px 15px;
-    background-color: #E18168;
-    border-radius: 10px;
-    margin-top: 100px;
-}
-.section-formulario label{
-    color: white;
-}
-.section-formulario .input{
-    width: 100%;
-    margin-bottom: 10px;
-}
-.section-formulario input{ 
-    width: 100%;
-    padding: 20px;
-    height: 52px;
-    border: none;
-    margin-top: 5px;
-    border-radius: 10px;
-    background-color: #EEF5F0;
-}
-.section-formulario .telefone{
-    display: flex;
-    justify-content: space-between;
-}
-.ddi{
-    width: 150px;
-    margin-right: 10px;
-}
-.section-formulario .button{
-    background-color: #2CB742;
-    color: white;
+.titulo{
     font-weight: bold;
-    margin-top: 25px;
-    letter-spacing: 150%;
+    font-size: 40px;
+    letter-spacing: 0.046em;
+    padding-bottom: 10px;
 }
-
-
-@media screen and (min-width: 700px) {
-    .section-formulario {
-        padding-right: 300px;
-        align-items: flex-end;
-    }
-    .section-formulario .form{
-        width: 400px;
-    }
-    .section-formulario .titulo-subtitulo {
-        width: 400px;
-    }
+.subtitulo{
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 0.046em;
 }

@@ -47,56 +47,62 @@ export default function Formulario() {
 
     return (
         <section className="section-formulario">
-            <TituloSubtitulo
-                titulo={titulosDescricoesSecoes["formulario"].titulo} 
-                subtitulo={titulosDescricoesSecoes["formulario"].subtitulo}
-            />
+            <div className="container-formulario">
+                <TituloSubtitulo
+                    titulo={titulosDescricoesSecoes["formulario"].titulo} 
+                    subtitulo={titulosDescricoesSecoes["formulario"].subtitulo}
+                />
 
-            <form className="form">
-                <div className="input">
-                    <label htmlFor="nome">Nome*</label>
-                    <input type="text" value={nome} onChange={(e) => {
-                        if(nome !== "")
-                            setErrorNome(false)
-                        setNome(e.target.value)
-                        }}/>
-                    {errorNome?<label className="error">Digite um nome</label>:null}
-                </div>
-
-                <div className="input">
-                    <label htmlFor="email">E-mail*</label>
-                    <input type="email" value={email} onChange={(e) => {
-                        if(email !== "")
-                            setErrorEmail(false)
-                        setEmail(e.target.value)
-                        }}/>
-                    {errorEmail?<label className="error">Digite um e-mail</label>:null}
-                </div>
-
-                <div className="telefone">
-                    <div className="ddi">
-                        <label htmlFor="telefone">DDI*</label>
-                        <input type="tel" value={ddi} onChange={(e) => {
-                            if(ddi !== "")
-                                setErrorDdi(false)
-                            setDdi(e.target.value)
+                <form className="form">
+                    <div className="input">
+                        <label htmlFor="nome">Nome*</label>
+                        <input type="text" value={nome} onChange={(e) => {
+                            if(nome !== "")
+                                setErrorNome(false)
+                            setNome(e.target.value)
                             }}/>
-                        {errorDdi?<label className="error">Digite um DDI</label>:null}
+                        {errorNome?<label className="error">Digite um nome</label>:null}
                     </div>
 
-                    <div className="numero">
-                        <label htmlFor="telefone">Telefone*</label>
-                        <input type="tel" value={telefone} onChange={(e) => {
-                            if(telefone !== "")
-                                setErrorTelefone(false)
-                            setTelefone(e.target.value)
+                    <div className="input">
+                        <label htmlFor="email">E-mail*</label>
+                        <input type="email" value={email} onChange={(e) => {
+                            if(email !== "")
+                                setErrorEmail(false)
+                            setEmail(e.target.value)
                             }}/>
-                        {errorTelefone?<label className="error">Digite um telefone</label>:null}
+                        {errorEmail?<label className="error">Digite um e-mail</label>:null}
                     </div>
-                </div>
 
-                <input className="button" type="button" value="ENVIAR" onClick={() => validar()} />
-            </form>
+                    <div className="telefone">
+                        <div className="ddi">
+                            <label htmlFor="telefone">DDI*</label>
+                            <input type="tel" value={ddi} onChange={(e) => {
+                                if(ddi !== "")
+                                    setErrorDdi(false)
+                                setDdi(e.target.value)
+                                }}/>
+                            {errorDdi?<label className="error">Digite um DDI</label>:null}
+                        </div>
+
+                        <div className="numero">
+                            <label htmlFor="telefone">Telefone*</label>
+                            <input type="tel" value={telefone} onChange={(e) => {
+                                if(telefone !== "")
+                                    setErrorTelefone(false)
+                                setTelefone(e.target.value)
+                                }}/>
+                            {errorTelefone?<label className="error">Digite um telefone</label>:null}
+                        </div>
+                    </div>
+
+                    <input className="button" type="button" value="ENVIAR" onClick={() => validar()} />
+                </form>
+
+            </div>
+           
+
+            
         </section>
     )
 }

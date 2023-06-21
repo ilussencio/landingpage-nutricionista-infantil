@@ -1,0 +1,49 @@
+.alertas{
+    background-color: #EEF5F0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height:930px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.carrossel {
+    display: flex;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 40px;
+}
+.card_numero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 156px;
+    height: 90.06px;
+    border-radius: 20px;
+    position: relative;
+    top: 40px;
+    background: #EA514B;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 0.06em;
+    font-weight: bold;
+}
+.card_descricao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 364px;
+    height: 258px;
+    border-radius: 20px;
+    background: #FCE0CB;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 0.06em;
+    font-weight: bold;
+}
