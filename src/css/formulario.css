@@ -5,9 +5,8 @@
     justify-content: center;
     align-items: center;
     background-color: #FBECE8;
-    background-image: url(../assets/menica-com-legumes-grande.jpg);
+    background-image:url(../assets/menica-com-legumes-grande.jpg);
     background-repeat: no-repeat;
-    background-position: -200px 0px;
 }
 
 .container-formulario {
@@ -23,6 +22,7 @@
     font-weight: bold;
    
 }
+
 .section-formulario .titulo-subtitulo {
     display: flex;
     flex-direction: column;
@@ -32,8 +32,8 @@
     line-height: 180%;
     text-align: center;
     font-size: 25px;
-
 }
+
 .section-formulario .form{
     display: flex;
     flex-direction: column;
@@ -43,9 +43,11 @@
     background-color: #E18168;
     border-radius: 10px;
 }
+
 .section-formulario label{
     color: white;
 }
+
 .section-formulario input{
     width: 100%;
     padding: 20px;
@@ -55,10 +57,12 @@
     border-radius: 10px;
     background-color: #EEF5F0;
 }
+
 .section-formulario .input{
     width: 100%;
     margin-bottom: 10px;
 }
+
 .section-formulario input .ddi .numero{
     width: 100%;
     padding: 20px;
@@ -68,13 +72,20 @@
     border-radius: 10px;
     background-color: #EEF5F0;
 }
+
 .section-formulario .telefone{
     display: flex;
+    width: 100%;
     justify-content: space-between;
 }
+
 .ddi{
-    width: 150px;
+    width: 30%;
     margin-right: 10px;
+}
+
+.section-formulario .numero{
+    width: 70%;
 }
 .section-formulario .button{
     background-color: #2CB742;
@@ -92,25 +103,9 @@
 }
 
 
-/* Tablet */
-@media screen and (min-width: 480px) and (max-width: 1440px) {
-    .section-formulario {
-        background-image: url(../assets/menica-com-legumes-medio.jpg);
-        background-position: -80px 0px;
-    }
-    .container-formulario{
-        align-items: center;
-    }
-    .section-formulario .subtitulo{
-        width: 400px;
-    }
-    .section-formulario .form{
-        width: 400px;
-    }
-}
-
-/* Desktop */
-@media screen and (min-width:1440px) {
+/* media queries para responsividade */
+/*Desktop*/
+@media screen and (min-width: 1024px) {
     .section-formulario{
         background-position: center;
     }
@@ -125,4 +120,32 @@
         align-items: flex-end;
         width: 1000px;
     }
+   
+}
+
+/*Tablet*/
+@media screen and (min-width: 767px) and (max-width:1023px) {
+    .section-formulario {
+        background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../assets/menica-com-legumes-medio.jpg);
+        background-position: -80px 0px;
+    }
+    .container-formulario{
+        align-items: center;
+    }
+    .section-formulario .subtitulo{
+        width: 400px;
+    }
+    .section-formulario .form{
+        width: 400px;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 766px) {
+    .section-formulario {
+        background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../assets/menica-com-legumes-pequeno.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
 }

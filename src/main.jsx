@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './css/styles.css'
 import './css/formulario.css'
 import './css/alertas.css'
+import './css/depoimentos.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

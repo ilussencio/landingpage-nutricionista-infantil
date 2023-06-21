@@ -1,7 +1,8 @@
 export default function Header() {
     return (
         <header>
-            <h1>Header da página</h1>
+            <h1><a href="#depoimentos">Header</a> da página</h1>
+
         </header>
     )
 }
