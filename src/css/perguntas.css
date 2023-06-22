@@ -1,0 +1,30 @@
+.faq {
+    background-color: #FBECE8;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 78px;
+    padding-left: 50px;
+}
+
+
+.faq-detalhes {
+    padding-left: 50px;
+
+}
+
+/* media queries para responsividade */
+/*Dsektop*/
+@media screen and (min-width: 1024px) {}
+
+/*Tablet */
+@media screen and (min-width: 767px) and (max-width:1023px) {
+
+}
+
+/*Mobile*/
+@media screen and (max-width: 766px) {
+
+}
