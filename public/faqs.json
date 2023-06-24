@@ -1,16 +1,40 @@
 {
   "faqs": [
     {
-      "pergunta": "1) Quais Alimentos recomendados para introdução alimentar dos bebês?",
-      "resposta": "A introdução alimentar para bebês ocorre por volta dos 6 meses. É recomendado oferecer alimentos amassados ou em purê, como frutas, legumes e cereais sem glúten. Introduza um alimento de cada vez, observando reações alérgicas. O leite materno ou fórmula continua sendo a principal fonte de nutrição até 1 ano de idade."
+      "pergunta": "1) Quando devo introduzir alimentos sólidos na dieta do meu bebê?",
+      "resposta": "A introdução de alimentos sólidos deve ocorrer por volta dos 6 meses de idade, na presença dos sinais de prontidão que indicam que ele está preparado para essa nova etapa. Os sinais de prontidão são:\n- Ficar sentado com um mínimo de apoio\n- Demonstrar interesse pela comida\n- Perda do reflexo de protusão da língua (não empurra a língua para fora quando algo é colocado em sua boca)\n- Leva objetos à boca\nAntes disso, o leite materno ou fórmula infantil fornece todos os nutrientes necessários para o bebê. \n"
     },
     {
-      "pergunta": "2) Quando devo introduzir alimentos solidos na alimentação do meu bebê?",
-      "resposta": "A introdução alimentar para bebês ocorre por volta dos 6 meses. É recomendado oferecer alimentos amassados ou em purê, como frutas, legumes e cereais sem glúten. Introduza um alimento de cada vez, observando reações alérgicas. O leite materno ou fórmula continua sendo a principal fonte de nutrição até 1 ano de idade."
+      "pergunta": "2) Como lidar com a recusa alimentar do meu filho?",
+      "resposta": "A recusa alimentar é comum em crianças, mas existem estratégias para lidar com isso. Mantenha a calma e ofereça alimentos saudáveis de forma atrativa. Ofereça uma variedade de alimentos em diferentes formas, cores e texturas. Envolver as crianças no preparo das refeições e tornar a alimentação um momento prazeroso também pode ajudar.\n"
     },
     {
-      "pergunta": "3) Qual o maior mito na alimentação infantil?",
-      "resposta": "O maior mito na alimentação infantil é"
+      "pergunta": "3) Quais alimentos devo evitar dar ao meu filho nos primeiros anos de vida?",
+      "resposta": "Nos primeiros anos, é importante evitar alimentos ricos em açúcar, sal e gorduras saturadas, assim como alimentos processados e industrializados. Também é recomendado evitar mel antes de 1 ano de idade, devido ao risco de botulismo infantil (mel também é açúcar)."
+    },
+    {
+      "pergunta": "4) Como garantir que meu filho esteja recebendo todos os nutrientes necessários?",
+      "resposta": "Ofereça uma variedade de alimentos nutritivos, incluindo frutas, legumes, cereais integrais, proteínas magras e laticínios. As refeições devem ser equilibradas e coloridas, garantindo uma ingestão adequada de vitaminas, minerais e outros nutrientes essenciais. Em alguns casos, pode ser necessário suplementar com vitaminas ou minerais, mas isso deve ser recomendado por um profissional de saúde."
+    },
+    {
+      "pergunta": "5) Qual é a quantidade de comida adequada para a idade do meu filho?",
+      "resposta": "As quantidades de comida variam conforme a idade, o apetite e as necessidades individuais da criança. Geralmente, é indicado oferecer porções pequenas no início e permitir que a criança determine sua própria saciedade. É importante observar os sinais de fome e saciedade do bebê e respeitá-los."
+    },
+    {
+      "pergunta": "6) Como lidar com alergias alimentares ou restrições dietéticas?",
+      "resposta": "Se você suspeita de alergias alimentares, é essencial buscar orientação médica. Em caso de restrições dietéticas, como intolerâncias ou preferências alimentares, um nutricionista pode auxiliar na elaboração de um plano alimentar adequado, garantindo a oferta de todos os nutrientes necessários. Se precisar de ajuda, agende uma consulta comigo."
+    },
+    {
+      "pergunta": "7) É seguro oferecer alimentos caseiros ou é melhor optar por alimentos industrializados?",
+      "resposta": "Alimentos caseiros são a opção mais saudável, pois permitem um controle maior dos ingredientes utilizados. No entanto, nem sempre é possível preparar todas as refeições em casa. Nesses casos, é importante escolher alimentos industrializados adequados para a faixa etária, observando os rótulos e evitando aqueles com adição de açúcar, sal e aditivos prejudiciais. Descasque mais e desembale menos!"
+    },
+    {
+      "pergunta": "8) Como estimular meu filho a comer frutas e vegetais?",
+      "resposta": "Ofereça uma variedade de frutas e vegetais de diferentes cores e texturas. Apresente-os de maneira atrativa, como cortados em formatos divertidos ou em receitas saborosas. Envolver a criança na escolha e preparo dos alimentos também pode despertar seu interesse. Seja um exemplo, consumindo frutas e vegetais regularmente."
+    },
+    {
+      "pergunta": "9) Qual é a importância da amamentação e como fazer a transição para a alimentação sólida?",
+      "resposta": "A amamentação é fundamental nos primeiros meses de vida, fornecendo todos os nutrientes necessários para o bebê e fortalecendo seu sistema imunológico. A introdução dos alimentos sólidos deve ser gradual, mantendo a amamentação ou fórmula até, pelo menos, 1 ano de idade. A transição deve ser feita com calma, oferecendo alimentos amassados ou em pedaços grandes que o bebê consiga segurar, e evoluindo para pedaços conforme o bebê adquire novas habilidades. É importante que essa transição seja acompanhada por um nutricionista infantil."
     }
   ]
 }

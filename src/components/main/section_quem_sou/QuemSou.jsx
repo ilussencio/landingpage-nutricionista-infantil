@@ -9,16 +9,10 @@ export default function QuemSou() {
             <div className="about-text">
                 <TituloSubtitulo titulo={titulosDescricoesSecoes["quemSou"].titulo} subtitulo={titulosDescricoesSecoes["quemSou"].subtitulo}/>
                 <div className="about-text-principal">
-                    <p>Meu nome é Sabrina Penido Bertho Macedo e sou formada em Nutrição na Universidade Presidente
-                        Antônio Carlos
-                        em Araguari. Pós graduanda em Nutrição Materno Infantil pelo Instituto Pelitude Educação,
-                        formada em
-                        coaching nutricional infantil e adepta ao Método Nutrikids criado por Andréa Lins.</p>
+                    <p>Me chamo Sabrina Penido, sou a nutricionista Materno Infantil que vai te orientar e de mãos dadas vamos trilhar um delicioso e nutritivo caminho, cheio de aprendizados e conquistas.</p>
                 </div>
                 <div className="about-text-secundario">
-                    <p>Meu atendimento vai muito além de um plano alimentar, junto com você traçamos estratégias para
-                        que o seu
-                        filho se alimente bem.<br/><span className="about-text-signature">Sabrina Penido.</span></p>
+                    <p>Formada em Nutrição pela Universidade Antonio Carlos, pós graduanda em Nutrição Materno Infantil<br/><span className="about-text-signature">Sabrina Penido.</span></p>
                 </div>
             </div>
             <img
