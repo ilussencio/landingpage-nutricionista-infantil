@@ -10,32 +10,45 @@ export default function Perguntas() {
         fetch('faqs.json')
             .then(file => file.json())
             .then(conteudo => setFaqs(conteudo.faqs))
-        console.log('useEffect rodou!')
     }, [])
 
     function getFaqs() {
         return faqs.map((faq, id) => {
             return (
-                // eslint-disable-next-line react/jsx-key
-                <li>
-                    <input type="radio" id={id} name="accordion" className="radio" key={id}/>
-                    <label for={id}>{faq.pergunta}</label>
-                    <div className="answer">{faq.resposta}</div>
-                </li>
+                <div className="panel panel-default">
+                    <div className="panel-heading" role="tab" id={"head" + id}>
+                        <h4 className="panel-title">
+                            <a className="first" role="button" data-toggle="collapse" data-parent="#accordion"
+                               href={"#collapse" + id} aria-expanded="true" aria-controls={"collapse" + id}>
+                                {faq.pergunta}
+                                <span> </span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id={"collapse" + id} className="panel-collapse collapse in" role="tabpanel"
+                         aria-labelledby={"head" + id}>
+                        <div className="panel-body">
+                            <p>{faq.resposta}</p>
+                        </div>
+                    </div>
+                </div>
             )
         })
     }
 
     return (
-        <section className={"faq"}>
+        <section className="faq">
             <TituloSubtitulo titulo={titulosDescricoesSecoes["perguntas"].titulo}
-                             subtitulo={titulosDescricoesSecoes["perguntas"].subtitulo} />
-            <div className="wrapper">
-                <ul className="accordion">
-                    {getFaqs()}
-                </ul>
+                             subtitulo={titulosDescricoesSecoes["perguntas"].subtitulo}/>
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-offset-3 col-md-8">
+                        <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            {getFaqs()}
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-
     )
 }
