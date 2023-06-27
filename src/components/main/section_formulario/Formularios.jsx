@@ -46,7 +46,7 @@ export default function Formulario() {
     }
 
     return (
-        <section className="section-formulario">
+        <section className="section-formulario" id="formulario">
             <div className="container-formulario">
                 <TituloSubtitulo
                     titulo={titulosDescricoesSecoes["formulario"].titulo} 

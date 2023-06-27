@@ -3,7 +3,7 @@ import titulosDescricoesSecoes from "../../../js/titulosDescricoesSecoes"
 
 export default function QuemSou() {
     return (
-        <section className="about-me" id="about-me">
+        <section className="about-me" id="quemSou">
             <div className="container">
                 <div className="about-me-container">
                     <div className="about-me-title">

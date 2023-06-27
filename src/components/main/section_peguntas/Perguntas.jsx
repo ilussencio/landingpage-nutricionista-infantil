@@ -37,7 +37,7 @@ export default function Perguntas() {
     }
 
     return (
-        <section className="faq">
+        <section className="faq" id="perguntas">
             <TituloSubtitulo titulo={titulosDescricoesSecoes["perguntas"].titulo}
                              subtitulo={titulosDescricoesSecoes["perguntas"].subtitulo}/>
             <div className="container">
