@@ -4,10 +4,14 @@
 }
 .cartoes{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 0px 200px 0px 200px;
+}
+.cartoes-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cartao{
@@ -47,11 +51,8 @@
     0% {
       transform: rotate(0);
     }
-    25% {
+    70% {
         transform: rotate(20deg);
-    }
-    50%{
-        transform: rotate(-5deg);
     }
     100% {
       transform: rotate(0);
@@ -61,21 +62,33 @@
 /* media queries para responsividade */
 /*Desktop*/
 @media screen and (min-width: 1024px) {
-    .cartoes{
-        padding: 0px 200px 0px 200px;
+    .cartoes-line{
+        flex-direction: row;
     }
 }
 
 /*Tablet*/
 @media screen and (min-width: 767px) and (max-width:1023px) {
-    .cartoes{
-        padding: 0px 100px 0px 100px;
+    .cartoes-line{
+        flex-direction: row;
+        flex-wrap: wrap;
     }
+
+    .cartoes{
+        flex-direction: row;
+    }
+    
+    
 }
 
 /*Mobile*/
 @media screen and (max-width: 766px) {
+    .cartoes-line{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .cartoes{
-        padding: 0px 0px 0px 0px;
+        flex-direction: column;
     }
 }

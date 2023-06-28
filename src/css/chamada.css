@@ -9,15 +9,45 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 .texto {
-    width: 575px;
+    width: 774px;
     padding-left: 135px;
     padding-bottom: 30px;
-
 }
 
 .texto h1 {
-    font-size: 30px;
+    font-size: 40px;
+}
+
+/* media queries para responsividade */
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+    
+}
+
+/*Tablet*/
+@media screen and (min-width: 767px) and (max-width:1023px) {
+    .texto {
+        padding: 0;
+        width: 100%;
+    }
+    .chamada {
+        background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)),url("src/assets/menino-top-grande.jpg");
+        background-position: -80px 0px;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 766px) {
+    .texto {
+        padding: 0;
+        width: 100%;
+    }
+    .chamada {
+        background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)),url("src/assets/menino-top-grande.jpg");
+        background-position: -190px 0px;
+    }
 }

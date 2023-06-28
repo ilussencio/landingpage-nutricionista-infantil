@@ -10,6 +10,7 @@ import './css/perguntas.css'
 import './css/chamada.css'
 import './css/header.css'
 import './css/especialidades.css'
+import './css/posso_ajudar.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

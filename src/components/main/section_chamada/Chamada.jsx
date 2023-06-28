@@ -5,7 +5,7 @@ export default function Chamada() {
     return (
         <section className="chamada" id="chamada">
             <div className="texto">
-            <TituloSubtitulo titulo={titulosDescricoesSecoes["chamada"].titulo} subtitulo={titulosDescricoesSecoes["chamada"].subtitulo}/>
+                <TituloSubtitulo titulo={titulosDescricoesSecoes["chamada"].titulo} subtitulo={titulosDescricoesSecoes["chamada"].subtitulo}/>
             </div>
         </section>
     )

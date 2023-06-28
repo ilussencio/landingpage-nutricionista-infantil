@@ -1,0 +1,36 @@
+.section-posso-ajudar{
+    padding: 1%;
+    padding-bottom: 3%;
+    background-color: #EEF5F0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.box-containers-posso-ajudar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-posso-ajudar{
+    margin: auto;
+    padding: 100px;
+}
+
+.container-posso-ajudar img{
+  border-radius: 30px;
+}
+
+.card-posso-ajudar{
+    color: white;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.container-card-posso-ajudar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}

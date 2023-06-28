@@ -22,7 +22,7 @@ export default function Header() {
                     </div>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className='nav-item'>
-                            <Link to="possoajudar" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Posso Te Ajudar?</Link>
+                            <Link to="possoajudar" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Posso te ajudar?</Link>
                         </li>
                         <li className='nav-item'>
                             <Link to="especialidades" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Especialidades</Link>
@@ -31,7 +31,7 @@ export default function Header() {
                             <Link to="alertas" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Alertas</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to="quemSou" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Quem Sou</Link>
+                            <Link to="quemSou" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Quem sou</Link>
                         </li>
                         <li className='nav-item'>
                             <Link to="depoimentos" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Depoimentos</Link>

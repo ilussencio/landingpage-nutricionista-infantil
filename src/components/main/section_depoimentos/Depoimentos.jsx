@@ -18,7 +18,7 @@ export default function Depoimentos() {
         },
         {
             nome: "Isabella Ferreira",
-            depoimento: "A Sabrina amplia os horizontes e faz a alimentação ser entendida de uma maneira leve! Aprendo muito com ela. Ótima pessoa e profissional!",
+            depoimento: "A Sabrina amplia os horizontes e faz a alimentação ser entendida de uma maneira leve! Aprendo muito com ela.",
             imagem: "depoimento3.jpg",
             estrelas: "avaliacao.png"
         }

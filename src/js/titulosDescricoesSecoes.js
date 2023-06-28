@@ -1,7 +1,7 @@
 const titulosDescricoesSecoes = {
     chamada :{
         titulo:"POR QUE PRECISO DE UMA NUTRICIONISTA INFANTIL?",
-        subtitulo:"A saúde do seu filho é muito importante. Não deixe passar despercebido."
+        subtitulo:"A saúde do seu filho é muito importante.     Não deixe passar despercebido."
     },
     possoAjudar:{
         titulo: "POSSO TE AJUDAR?",
