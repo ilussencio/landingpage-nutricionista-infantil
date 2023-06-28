@@ -44,19 +44,6 @@
     text-align: center;
     border: 2px black solid;
     margin: 10px;
-
-}
-
-@keyframes rotate {
-    0% {
-      transform: rotate(0);
-    }
-    70% {
-        transform: rotate(20deg);
-    }
-    100% {
-      transform: rotate(0);
-    }
 }
 
 /* media queries para responsividade */

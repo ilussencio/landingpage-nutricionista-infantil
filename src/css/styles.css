@@ -31,3 +31,16 @@ Section {
     font-weight: lighter;
     letter-spacing: 0.046em;
 }
+
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    70% {
+        transform: rotate(20deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+}
