@@ -9,6 +9,7 @@ import './css/quemSou.css'
 import './css/perguntas.css'
 import './css/chamada.css'
 import './css/header.css'
+import './css/especialidades.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

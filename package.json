@@ -11,11 +11,14 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "bootstrap": "^5.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-floating-whatsapp": "^5.0.8",
     "react-icons": "^4.10.1",
     "react-scroll": "^1.8.9",
+    "react-tiny-popover": "^7.2.4",
+    "rsuite": "^5.35.1",
     "swiper": "^9.4.1"
   },
   "devDependencies": {

@@ -17,15 +17,15 @@ export default function Header() {
                         <img src='src/assets/sabrina_logo.png' alt='logo' />
                     </Link>
                     <div className='hamburger' onClick={handleClick}>
-                        {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
-                            : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
+                        {click ? (<FaTimes size={30} style={{ color: '#ea514b' }} />)
+                            : (<FaBars size={30} style={{ color: '#ea514b' }} />)}
                     </div>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className='nav-item'>
-                            <Link to="test1" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Posso Te Ajudar?</Link>
+                            <Link to="possoajudar" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Posso Te Ajudar?</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to="test1" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Especialidades</Link>
+                            <Link to="especialidades" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Especialidades</Link>
                         </li>
                         <li className='nav-item'>
                             <Link to="alertas" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Alertas</Link>

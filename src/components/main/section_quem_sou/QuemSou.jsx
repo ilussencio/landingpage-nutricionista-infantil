@@ -12,11 +12,11 @@ export default function QuemSou() {
                     </div>
                     <div className="about-me-flex-container">
                         <div className="about-me-image">
-                            <div className="main-image"><img src="src/assets/sabrina_main.png" alt="sabrina"/>
+                            <div className="main-image">
+                                <img src="src/assets/sabrina_main.png" alt="sabrina"/>
                             </div>
                         </div>
                         <div className="about-me-content">
-                            <div className="logo"><img src="src/assets/sabrina_logo.png" alt="logo"/></div>
                             <div className="text">
                                 Me chamo Sabrina Penido, sou a nutricionista Materno Infantil que vai te orientar e de
                                 mãos dadas vamos
