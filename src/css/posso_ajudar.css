@@ -1,5 +1,5 @@
 .section-posso-ajudar{
-    padding: 1%;
+    padding: 20px;
     padding-bottom: 3%;
     background-color: #EEF5F0;
     display: flex;
@@ -47,6 +47,9 @@
 /* media queries para responsividade */
 /*Desktop*/
 @media screen and (min-width: 1024px) {
+    .section-posso-ajudar .titulo-subtitulo .subtitulo {
+        width: 1000px !important;
+    }
     
 }
 

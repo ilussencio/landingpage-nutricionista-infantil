@@ -1,6 +1,6 @@
 import TituloSubtitulo from "../common/TituloSubtitulo"
 import titulosDescricoesSecoes from "../../../js/titulosDescricoesSecoes"
-
+import Animacao from "../../tools/Animacao";
 
 import React, { useRef, useState } from "react";
 // Import Swiper React components
@@ -68,8 +68,7 @@ export default function Alertas() {
                 titulo={"E aí identificou algum sinal?"} 
                 subtitulo={"Se SIM, então é hora de procurar um atendimento nutricional para o seu filho."}/>
 
-            </div>
-            
+            </div>            
 
         </section>
     )

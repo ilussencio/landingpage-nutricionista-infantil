@@ -11,6 +11,7 @@ import './css/chamada.css'
 import './css/header.css'
 import './css/especialidades.css'
 import './css/posso_ajudar.css'
+import './css/footer.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

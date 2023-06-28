@@ -1,6 +1,7 @@
 import TituloSubtitulo from "../common/TituloSubtitulo"
 import titulosDescricoesSecoes from "../../../js/titulosDescricoesSecoes"
 import Cartao from "./Cartao"
+import Animacao from "../../tools/Animacao"
 
 export default function Especialidades() {
     const especialidades = [
@@ -32,7 +33,7 @@ export default function Especialidades() {
                 "imagem": "cholesterol.png"       
             },
             {
-                "titulo": "Autismo",
+                "titulo": "TEA",
                 "descricao": "Com uma abordagem nutricional amorosa e personalizada, podemos ajudar as crianças com autismo a florescerem, nutrindo seus corpos e mentes para que brilhem em todas as cores do espectro.",
                 "imagem": "ribbon.png"       
             },
@@ -55,16 +56,24 @@ export default function Especialidades() {
             <div className="cartoes">
                 <div className="cartoes-line">
                     { especialidades[0].map((especialidade, index) => { 
-                            return <Cartao key={index} titulo={especialidade.titulo} descricao={especialidade.descricao} imagem={especialidade.imagem}/>
+                            return <Cartao key={index} id={index} titulo={especialidade.titulo} descricao={especialidade.descricao} imagem={especialidade.imagem}/>
                     }) }
                 </div>
                 <div className="cartoes-line">
                     { especialidades[1].map((especialidade, index) => {
-                            return <Cartao key={index} titulo={especialidade.titulo} descricao={especialidade.descricao} imagem={especialidade.imagem}/>
+                            return <Cartao key={index} id={index} titulo={especialidade.titulo} descricao={especialidade.descricao} imagem={especialidade.imagem}/>
                     }) }
                 </div>
                 
             </div>
+
+
+
+            <Animacao css_identifier=".card-cartao-0" easing_type="ease-in" duration={200}/>
+            <Animacao css_identifier=".card-cartao-1" easing_type="ease-in" duration={400}/>
+            <Animacao css_identifier=".card-cartao-2" easing_type="ease-in" duration={800}/>
+            <Animacao css_identifier=".card-cartao-3" easing_type="ease-in" duration={900}/>
+
         </section>
     )
 }

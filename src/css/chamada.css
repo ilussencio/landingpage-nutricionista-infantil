@@ -12,10 +12,21 @@
     padding: 20px;
 }
 
+.chamada .subtitulo {
+    width: 450px;
+}
+.chamada .titulo-subtitulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .texto {
     width: 774px;
     padding-left: 135px;
     padding-bottom: 30px;
+    text-align: left;
 }
 
 .texto h1 {

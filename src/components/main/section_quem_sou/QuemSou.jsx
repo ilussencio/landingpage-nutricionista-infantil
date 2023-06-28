@@ -1,5 +1,6 @@
 import TituloSubtitulo from "../common/TituloSubtitulo"
 import titulosDescricoesSecoes from "../../../js/titulosDescricoesSecoes"
+import Animacao from "../../tools/Animacao"
 
 export default function QuemSou() {
     return (
@@ -17,11 +18,12 @@ export default function QuemSou() {
                             </div>
                         </div>
                         <div className="about-me-content">
-                            <div className="text">
+                            <div className="text-one">
                                 Me chamo Sabrina Penido, sou a nutricionista Materno Infantil que vai te orientar e de
                                 mãos dadas vamos
                                 trilhar um delicioso e nutritivo caminho, cheio de aprendizados e conquistas.
-                                <br/><br/>
+                            </div>
+                            <div className="text-two">
                                 Formada em Nutrição pela Universidade Antonio Carlos, pós graduanda em Nutrição Materno
                                 Infantil
                             </div>
@@ -29,6 +31,11 @@ export default function QuemSou() {
                     </div>
                 </div>
             </div>
+
+
+            <Animacao css_identifier=".about-me-content" easing_type="ease-in" duration={800}/>
+
+            <Animacao css_identifier=".about-me-image" easing_type="ease-in" duration={400}/>
         </section>
     )
 }

@@ -1,0 +1,76 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#fce0cb;
+}
+
+.footer p {
+    color:black;
+    text-align:center;
+    padding: 5px 5px 5px;
+    font-size:11px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.facebook,
+.twitter,
+.youtube,
+.pinterest,
+.instagram,
+.tumblr{
+    display: inline-block;
+    margin: 10px;
+    transition: 1s;
+    border-radius:15px;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-youtube,
+.fa-pinterest-p,
+.fa-instagram,
+.fa-tumblr{
+    padding: 10px;
+    width: 80px;
+    text-align: center;
+    color: white;
+}
+
+.youtube:hover,
+.facebook:hover,
+.twitter:hover,
+.pinterest:hover,
+.instagram:hover,
+.tumblr:hover{
+    transform: scale(1.1, 1.1);
+    transform: rotate(360deg);
+}
+
+/*.footerFooter{*/
+/*    width: auto;*/
+/*    height: 15px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    background-color:#fce0cb;*/
+/*    color:blac;*/
+/*    text-align:center;*/
+/*    padding:11px;*/
+/*    font-size:16px;*/
+/*    font-family: 'Roboto', sans-serif;*/
+/*}*/
+
+/*Colors*/
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.youtube {
+    background-color: #E62117;
+}
+
+.instagram {
+    background: linear-gradient(60deg, #F9C556, #F97621, #EA484C, #D72F78, #A93AB5, #5B62D1);
+}

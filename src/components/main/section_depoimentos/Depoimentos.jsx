@@ -1,6 +1,7 @@
 import TituloSubtitulo from "../common/TituloSubtitulo"
 import titulosDescricoesSecoes from "../../../js/titulosDescricoesSecoes"
 import CardDepoimento from "./CardDepoimento"
+import Animacao from "../../tools/Animacao"
 
 export default function Depoimentos() {
     const depoimentos = [
@@ -35,9 +36,13 @@ export default function Depoimentos() {
            
             <div className="depoimentos-conteudo">
                 { depoimentos.map((depoimento, index) => {
-                     return <CardDepoimento key={index} nome={depoimento.nome} depoimento={depoimento.depoimento} imagem={depoimento.imagem} estrelas={depoimento.estrelas}/>})
+                     return <CardDepoimento key={index} id={index} nome={depoimento.nome} depoimento={depoimento.depoimento} imagem={depoimento.imagem} estrelas={depoimento.estrelas}/>})
                 }
             </div>
+
+            <Animacao css_identifier={".card-0"} easing_type="ease-in" duration={300}/>
+            <Animacao css_identifier={".card-1"} easing_type="ease-in" duration={600}/>
+            <Animacao css_identifier={".card-2"} easing_type="ease-in" duration={900}/>
         </section>
     )
 }

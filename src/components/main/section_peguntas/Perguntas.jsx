@@ -1,6 +1,6 @@
 import TituloSubtitulo from "../common/TituloSubtitulo"
 import titulosDescricoesSecoes from "../../../js/titulosDescricoesSecoes"
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 export default function Perguntas() {
 
@@ -19,14 +19,14 @@ export default function Perguntas() {
                     <div className="panel-heading" role="tab" id={"head" + id}>
                         <h4 className="panel-title">
                             <a className="first" role="button" data-toggle="collapse" data-parent="#accordion"
-                               href={"#collapse" + id} aria-expanded="true" aria-controls={"collapse" + id}>
+                                href={"#collapse" + id} aria-expanded="false" aria-controls={"collapse" + id}>
                                 {faq.pergunta}
                                 <span> </span>
                             </a>
                         </h4>
                     </div>
-                    <div id={"collapse" + id} className="panel-collapse collapse in" role="tabpanel"
-                         aria-labelledby={"head" + id}>
+                    <div id={"collapse" + id} className="panel-collapse collapse" role="tabpanel"
+                        aria-labelledby={"head" + id}>
                         <div className="panel-body">
                             <p>{faq.resposta}</p>
                         </div>
@@ -39,14 +39,10 @@ export default function Perguntas() {
     return (
         <section className="faq" id="perguntas">
             <TituloSubtitulo titulo={titulosDescricoesSecoes["perguntas"].titulo}
-                             subtitulo={titulosDescricoesSecoes["perguntas"].subtitulo}/>
+                subtitulo={titulosDescricoesSecoes["perguntas"].subtitulo} />
             <div className="container">
-                <div className="row">
-                    <div className="col-md-offset-3 col-md-8">
-                        <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                            {getFaqs()}
-                        </div>
-                    </div>
+                <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    {getFaqs()}
                 </div>
             </div>
         </section>

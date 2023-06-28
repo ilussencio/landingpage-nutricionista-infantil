@@ -3,6 +3,7 @@ import titulosDescricoesSecoes from "../../../js/titulosDescricoesSecoes"
 import CardPossoAjudar from "./CardPossoAjudar"
 import imagemFamilia from "../../../assets/familia-feliz.jpg"
 import possoAjudarCards from "../../../js/possoAjudarCards"
+import Animacao from "../../tools/Animacao"
 
 
 export default function PossoAjudar() {
@@ -43,6 +44,8 @@ export default function PossoAjudar() {
                     />
                 </div>
             </div>
+
+            <Animacao css_identifier=".box-containers-posso-ajudar" easing_type="ease-in" duration={800}/>
         </section>
     )
 }

@@ -1,11 +1,11 @@
 import { Popover } from 'react-tiny-popover';
 import React, { useState } from 'react';
 
-export default function Cartao({ titulo, descricao, imagem }) {
+export default function Cartao({ titulo, descricao, imagem, id }) {
     const [isPopoverOpen, setIsPopoverOpen] = useState(false);
 
     return (
-        <div className="cartao">
+        <div className={"cartao card-cartao-"+id}>
             <Popover
                 isOpen={isPopoverOpen}
                 positions={['top', 'bottom', 'left', 'right']}

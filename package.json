@@ -19,6 +19,7 @@
     "react-scroll": "^1.8.9",
     "react-tiny-popover": "^7.2.4",
     "rsuite": "^5.35.1",
+    "scrollreveal": "^4.0.9",
     "swiper": "^9.4.1"
   },
   "devDependencies": {

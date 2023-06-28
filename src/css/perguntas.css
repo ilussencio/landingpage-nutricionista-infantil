@@ -7,7 +7,15 @@ a:hover, a:focus{
     text-decoration: none !important;
     outline: none !important;
 }
-
+.panel-group{
+    width: 953px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-posso-ajudar 
 .panel-group .panel{
     background-color: #fce0cb;
     border:none;
@@ -66,4 +74,24 @@ a:hover, a:focus{
     font-size:14px;
     position: relative;
     border:1px solid #e18168;
+}
+
+/* media queries para responsividade */
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+}
+
+/*Tablet*/
+@media screen and (min-width: 767px) and (max-width:1023px) {
+    .panel-group{
+        width: 100%;
+    }
+    
+}
+
+/*Mobile*/
+@media screen and (max-width: 766px) {
+    .panel-group{
+        width: 100%;
+    }
 }
