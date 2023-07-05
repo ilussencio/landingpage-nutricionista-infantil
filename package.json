@@ -16,6 +16,7 @@
     "react-dom": "^18.2.0",
     "react-floating-whatsapp": "^5.0.8",
     "react-icons": "^4.10.1",
+    "react-router-dom": "^6.14.1",
     "react-scroll": "^1.8.9",
     "react-tiny-popover": "^7.2.4",
     "rsuite": "^5.35.1",
