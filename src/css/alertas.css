@@ -66,15 +66,23 @@
     justify-content: center;
     align-items: start;
 }
+/* Desktop */
+@media screen and (min-width:1440px) {
+    .swiper {
+        width: 1300px;
+    }
+    
+}
 
 /* Tablet */
 @media screen and (min-width: 480px) and (max-width: 1440px) {
     
 }
 
-/* Desktop */
-@media screen and (min-width:1440px) {
-    .swiper {
-        width: 1300px;
+
+/*Mobile*/
+@media screen and (max-width: 766px) {
+    .card_descricao{
+        width: 100%;
     }
 }

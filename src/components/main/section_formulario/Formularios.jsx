@@ -2,6 +2,8 @@ import { useState } from "react";
 import TituloSubtitulo from "../common/TituloSubtitulo"
 import titulosDescricoesSecoes from "../../../js/titulosDescricoesSecoes"
 import emailjs from '@emailjs/browser'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 export default function Formulario() {
@@ -16,6 +18,8 @@ export default function Formulario() {
     const [errorTelefone, setErrorTelefone] = useState(false);
 
     function validar(){
+        
+
         if(nome === "")
             setErrorNome(true);
         if(email === "")
@@ -35,10 +39,20 @@ export default function Formulario() {
             emailjs.send('service_u9kqbyu','template_uidt6za', teplateParams, 'fywtiEQqyfAWjW5PZ')
             .then((response) => {
                 console.log("EMAIL ENVIADO COM SUCESSO", response.status, response.text)
+                toast.success('💌 EMAIL ENVIADO COM SUCESSO', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                    });
                 setNome("");
                 setEmail("")
                 setTelefone("")
-                setDdi("")
+                setDdi("+55")
             }, (err) => {
                 console.log("ERRO AO ENVIAR EMAIL", err)
             })
@@ -47,6 +61,9 @@ export default function Formulario() {
 
     return (
         <section className="section-formulario" id="formulario">
+
+            <ToastContainer />
+
             <div className="container-formulario">
                 <TituloSubtitulo
                     titulo={titulosDescricoesSecoes["formulario"].titulo} 

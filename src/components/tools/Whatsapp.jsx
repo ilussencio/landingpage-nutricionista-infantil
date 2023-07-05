@@ -1,5 +1,5 @@
 import { FloatingWhatsApp } from "react-floating-whatsapp"
-import foto from '../../assets/sabrina_main.png'
+import foto from '../../assets/sabrina_main.jpg'
 export default function Whatsapp(){
 
     return (
