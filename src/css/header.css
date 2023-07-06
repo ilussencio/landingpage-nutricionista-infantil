@@ -34,7 +34,7 @@ a {
 }
 
 .header .nav-menu a {
-    color: #ea514b;
+    color: #A95D4A;
     font-weight: 400;
 }
 
@@ -50,12 +50,12 @@ a {
 
 .nav-item .active {
     padding-bottom: 12px;
-    border-bottom: 3px solid #ea514b;
+    border-bottom: 3px solid #A95D4A;
 }
 
 .header .nav-item a:hover {
     padding-bottom: 12px;
-    border-bottom: 3px solid #ea514b;
+    border-bottom: 3px solid #A95D4A;
 }
 
 .hamburger {

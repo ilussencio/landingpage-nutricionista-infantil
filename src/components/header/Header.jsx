@@ -17,8 +17,8 @@ export default function Header() {
                         <img src='src/assets/sabrina_logo.png' alt='logo' />
                     </Link>
                     <div className='hamburger' onClick={handleClick}>
-                        {click ? (<FaTimes size={30} style={{ color: '#ea514b' }} />)
-                            : (<FaBars size={30} style={{ color: '#ea514b' }} />)}
+                        {click ? (<FaTimes size={30} style={{ color: '#A95D4A' }} />)
+                            : (<FaBars size={30} style={{ color: '#A95D4A' }} />)}
                     </div>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className='nav-item'>

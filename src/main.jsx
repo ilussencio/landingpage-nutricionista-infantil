@@ -4,6 +4,7 @@ import App from './App.jsx'
 import Admin from './routes/Admin.jsx'
 import Home from './routes/Home.jsx'
 import ErrorPage from './routes/ErrorPage.jsx'
+import Leads from './routes/Leads.jsx'
 
 //Configurando router
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
@@ -24,7 +25,8 @@ const router  = createBrowserRouter([
     {path: "/", element: <App />},
     {errorElement: <ErrorPage />},
     {path: "admin", element: <Admin />},
-    {path: "home", element: <Home />}
+    {path: "home", element: <Home />},
+    {path: "leads", element: <Leads />},
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -65,7 +65,7 @@ export default function Alertas() {
             
             <div className="titulo-subtitulo-alerta">
                 <TituloSubtitulo 
-                titulo={"E aí identificou algum sinal?"} 
+                titulo={"E aí, você se identificou com algum desses sinais ?"} 
                 subtitulo={"Se SIM, então é hora de procurar um atendimento nutricional para o seu filho."}/>
 
             </div>            

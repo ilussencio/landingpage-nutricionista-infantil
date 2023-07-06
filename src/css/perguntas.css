@@ -33,7 +33,7 @@ a:hover, a:focus{
     border:none;
     padding:20px 35px 20px;
     font-size: 20px;
-    background-color:#e18168;
+    background-color:#A95D4A;
     font-weight:600;
     position: relative;
     color:#fce0cb;
@@ -48,7 +48,7 @@ a:hover, a:focus{
     left:-20px;
     top: 10px;
     color:#fce0cb;
-    background-color:#e18168;
+    background-color:#A95D4A;
     border: 5px solid #fce0cb;
     font-size: 15px;
     width: 40px;
@@ -66,13 +66,13 @@ a:hover, a:focus{
 }
 #accordion .panel-body{
     background-color:#fce0cb;
-    color:#8C8C8C;
+    color:#545454;
     line-height: 25px;
     padding: 10px 25px 20px 35px ;
     border-top:none;
     font-size:14px;
     position: relative;
-    border:1px solid #e18168;
+    border:1px solid #A95D4A;
 }
 
 /* media queries para responsividade */
