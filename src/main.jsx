@@ -20,6 +20,7 @@ import './css/header.css'
 import './css/especialidades.css'
 import './css/posso_ajudar.css'
 import './css/footer.css'
+import './css/personalizada.css'
 
 const router  = createBrowserRouter([
     {path: "/", element: <App />},

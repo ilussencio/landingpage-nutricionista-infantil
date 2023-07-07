@@ -1,0 +1,82 @@
+.personalizada{
+    background-color: #438058;
+    color: white;
+    padding: 20px 20px;
+}
+.personalizada_container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+}
+.personalizada_button{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.personalizada_corpo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+}
+.personalizada_texto{
+    font-size: 20px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+.personalizada_image{
+    width: 200px;
+    height: 200px;
+}
+.personalizada_corpo div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* media queries para responsividade */
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+}
+
+/*Tablet*/
+@media screen and (min-width: 767px) and (max-width:1023px) {
+    .personalizada_container{
+        width: 100%;
+    }
+    .personalizada_corpo{
+        flex-direction: column;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 766px) {
+    .personalizada h1{
+        font-size: 20px;
+    }
+    .personalizada p{
+        font-size: 15px;
+    }
+    .personalizada_container{
+        width: 90%;
+    }
+    .personalizada_corpo{
+        flex-direction: column-reverse;
+    }
+    .personalizada_corpo div{
+        width: 100%;
+    }
+    .personalizada_button{
+        padding: 15px 25px;
+        font-size: 15px;
+    }
+}

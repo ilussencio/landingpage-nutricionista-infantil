@@ -16,7 +16,7 @@ const possoAjudarCards = {
         color:"#438058"
     },  
     familias : {
-        titulo:"FAMILIAS",
+        titulo:"FAMÍLIAS",
         listaItems:["Educação alimentar para todos da família"],
         color:"#A95D4A"
     },
