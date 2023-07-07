@@ -14,7 +14,7 @@ export default function Header() {
             <div className='header'>
                 <nav className='navbar'>
                     <Link to="chamada" className='logo'>
-                        <img src='src/assets/sabrina_logo.png' alt='logo' />
+                        <img src='../../assets/sabrina_logo.png' alt='logo' />
                     </Link>
                     <div className='hamburger' onClick={handleClick}>
                         {click ? (<FaTimes size={30} style={{ color: '#A95D4A' }} />)
