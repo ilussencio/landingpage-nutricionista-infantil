@@ -24,7 +24,7 @@ import './css/personalizada.css'
 
 const router  = createBrowserRouter([
     {path: "/", element: <App />},
-    {path: "/teste", element: <App />},
+    {path: "teste", element: <App />},
     {path: "", element: <App />},
     {errorElement: <ErrorPage />},
     {path: "admin", element: <Admin />},
