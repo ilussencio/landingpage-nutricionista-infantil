@@ -19,7 +19,7 @@ export default function Main() {
 
     useEffect(() => {
         async function getInfos() {
-            await fetch('http://localhost:3000/section/active')
+            await fetch('https://plankton-app-e77tz.ondigitalocean.app/section/active')
             .then((response) => response.json())
             .then((response) => {
                 setStatus(response.data[0].status);
