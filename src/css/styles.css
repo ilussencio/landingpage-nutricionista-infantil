@@ -1,12 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: 'Inter', sans-serif;
 }
-Header, footer {
-    border: 1px solid black;
+
+html{
+    scroll-behavior: smooth;
 }
-Section{
-    border: 2px solid red;
+
+Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-subtitulo{
     text-align: center;
+}
+.titulo{
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 0.046em;
+    padding-bottom: 10px;
+}
+.subtitulo{
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 0.046em;
+}
+
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    70% {
+        transform: rotate(20deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+}
+
+/* media queries para responsividade */
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+}
+
+/*Tablet*/
+@media screen and (min-width: 767px) and (max-width:1023px) {
+
+    
+}
+
+/*Mobile*/
+@media screen and (max-width: 766px) {
+    .titulo{
+        font-size: 30px;
+    }
+    .subtitulo{
+        font-size: 20px;
+    }
+ 
 }
