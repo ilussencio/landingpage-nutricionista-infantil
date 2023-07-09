@@ -1,3 +1,4 @@
+import CookieBar from "./CookieBar.jsx";
 
 export default function Footer() {
     return (
@@ -19,7 +20,6 @@ export default function Footer() {
                     <p>2023 Direitos reservados LRE</p>
                 </div>
             </div>
-
         </footer>
     )
 }
