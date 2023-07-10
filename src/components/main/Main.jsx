@@ -11,7 +11,7 @@ import QuemSou from "./section_quem_sou/QuemSou"
 import Personalizada from "./section_personalizada/personalizada"
 import api from '../services/api.jsx';
 import axios from 'axios';
-import InstaFeed from "./section_instaFeed/InstaFeed.jsx";
+import InstaFeed from "./section_instafeed/Instafeed.jsx";
 import CookieConsent from "../header/CookieConsent.jsx";
 
 export default function Main() {
