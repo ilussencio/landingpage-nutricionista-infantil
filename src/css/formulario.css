@@ -87,6 +87,15 @@
 .section-formulario .numero{
     width: 70%;
 }
+
+.section-formulario .gdpr {
+    display: flex;
+    flex-direction: row;
+    justify-items: left;
+    margin-top: 10px;
+
+}
+
 .section-formulario .button{
     background-color: #3FE978;
     font-weight: 900;
