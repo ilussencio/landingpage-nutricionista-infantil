@@ -1,4 +1,4 @@
-import CookieBar from "./CookieBar.jsx";
+import CookieBar from "../header/CookieConsent.jsx";
 
 export default function Footer() {
     return (

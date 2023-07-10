@@ -25,7 +25,7 @@ import './css/footer.css'
 import './css/personalizada.css'
 import './css/instaFeed.css'
 import './css/termos-privacidade.css'
-import './css/cookiebar.css'
+import './css/cookieconsent.css'
 
 
 const router  = createBrowserRouter([

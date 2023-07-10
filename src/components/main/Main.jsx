@@ -10,7 +10,7 @@ import PossoAjudar from "./section_posso_ajudar/PossoAjudar"
 import QuemSou from "./section_quem_sou/QuemSou"
 import Personalizada from "./section_personalizada/personalizada"
 import InstaFeed from "./section_instaFeed/InstaFeed.jsx";
-import CookieBar from "../footer/CookieBar.jsx";
+import CookieConsent from "../header/CookieConsent.jsx";
 
 export default function Main() {
     const [status, setStatus] = useState(false);
@@ -38,7 +38,7 @@ export default function Main() {
 
     return ( 
         <main>
-            <CookieBar />
+            <CookieConsent />
             <Chamada />
             {/*<Personalizada titulo={titulo} subtitulo={subtitulo} link={link}/>*/}
             <PossoAjudar />
