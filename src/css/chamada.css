@@ -71,7 +71,6 @@
     }
     .chamada {
         background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("menino-top-grande.jpg");
-   
         background-position: -390px -250px;
     }
 }

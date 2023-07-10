@@ -31,6 +31,8 @@ import './css/cookieconsent.css'
 
 const router  = createBrowserRouter([
     {path: "/", element: <App />},
+    {path: "teste", element: <App />},
+    {path: "", element: <App />},
     {errorElement: <ErrorPage />},
     {path: "login", element: <Login />},
     {path: "leads", element: <Leads />},
