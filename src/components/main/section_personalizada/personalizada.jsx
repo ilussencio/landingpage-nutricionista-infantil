@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import TituloSubtitulo from '../common/TituloSubtitulo';
 
-export default function Personalizada({titulo, subtitulo, texto, link}) {
+export default function Personalizada({titulo, subtitulo, texto, link, imagem}) {
     
     
     return(
@@ -10,15 +10,16 @@ export default function Personalizada({titulo, subtitulo, texto, link}) {
                     <TituloSubtitulo titulo={titulo} subtitulo={subtitulo} />
                     
                     {!texto?<></>                        
-                    :<div className='personalizada_corpo'>
+                    :<div className='personalizada_corpo '>
                         <div>
-                            <p className='personalizada_texto'>{texto}</p>
+                            <div className='personalizada_texto' dangerouslySetInnerHTML={{ __html: texto }} />
+                            <a className='personalizada_button' href={link} target='blank'>Clique e saiba mais!</a>
                         </div>
                         <div>
-                            <img className='personalizada_image' src="bebe.png"/>
+                            <img className='personalizada_image' src={imagem}/>
                         </div>
                     </div>}                 
-                    <a className='personalizada_button' href={link}>Clique e saiba mais!</a>
+                    
                 </div>
             </section>
     );

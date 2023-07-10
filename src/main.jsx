@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import Admin from './routes/Admin.jsx'
-import Home from './routes/Home.jsx'
+import Login from './routes/LoginRoute.jsx'
 import ErrorPage from './routes/ErrorPage.jsx'
-import Leads from './routes/Leads.jsx'
+import Leads from './routes/LeadsRoute.jsx'
+import Campanha from './routes/CampanhaRoute.jsx'
 
 //Configurando router
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
@@ -21,13 +21,15 @@ import './css/especialidades.css'
 import './css/posso_ajudar.css'
 import './css/footer.css'
 import './css/personalizada.css'
+import './css/admin.css'
+
 
 const router  = createBrowserRouter([
     {path: "/", element: <App />},
     {errorElement: <ErrorPage />},
-    {path: "admin", element: <Admin />},
-    {path: "home", element: <Home />},
+    {path: "login", element: <Login />},
     {path: "leads", element: <Leads />},
+    {path: "campanha", element: <Campanha />},
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

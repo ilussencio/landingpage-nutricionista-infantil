@@ -77,7 +77,6 @@
 }
 
 .about-me-flex-container .about-me-image {
-    position: relative;
     width: 400px;
     height: 400px;
 }
@@ -90,26 +89,20 @@
 }
 
 .about-me-flex-container .about-me-image .main-image {
-    width: 90%;
-    height: 90%;
-    overflow: hidden;
-    position: absolute;
-    left: 17.5%;
-    top: 5%;
-    box-shadow: rgb(0, 0, 0) 3px 3px 10px 0px;
-    transition: all 0.2s ease-out;
-    border-radius: 20px;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    
 }
 .about-me-flex-container .about-me-image .main-image img {
+    width: 170px;
     transform: scaleX(-1);
 }
 
 .text-two {
-    text-align: right;
+    text-align: justify;
 }
 .text-one{
-    text-align: left;
+    text-align: justify;
 }
 
 .about-me-flex-container .about-me-image .main-image:hover {

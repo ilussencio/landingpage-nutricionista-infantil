@@ -4,7 +4,8 @@ import titulosDescricoesSecoes from "../../../js/titulosDescricoesSecoes"
 import emailjs from '@emailjs/browser'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import axios from "axios";
+import api from "../../services/api";
 
 export default function Formulario() {
     const [nome, setNome] = useState("");
@@ -17,9 +18,8 @@ export default function Formulario() {
     const [errorDdi, setErrorDdi] = useState(false);
     const [errorTelefone, setErrorTelefone] = useState(false);
 
-    function validar(){
+    async function validar(){
         
-
         if(nome === "")
             setErrorNome(true);
         if(email === "")
@@ -36,6 +36,16 @@ export default function Formulario() {
                 telefone: telefone,
                 ddi: ddi
             }
+
+            axios.post("https://plankton-app-e77tz.ondigitalocean.app/lead", teplateParams,{
+                headers: {"Content-type":"application/json; charset=UTF-8"}
+            })
+            .then((response) => {
+                console.log("LEAD CADASTRADO COM SUCESSO", response.status, response.data)
+            }, (err) => {
+                console.log("ERRO AO CADASTRAR LEAD", err)
+            });
+
             emailjs.send('service_u9kqbyu','template_uidt6za', teplateParams, 'fywtiEQqyfAWjW5PZ')
             .then((response) => {
                 console.log("EMAIL ENVIADO COM SUCESSO", response.status, response.text)

@@ -9,6 +9,8 @@ import Perguntas from "./section_peguntas/Perguntas"
 import PossoAjudar from "./section_posso_ajudar/PossoAjudar"
 import QuemSou from "./section_quem_sou/QuemSou"
 import Personalizada from "./section_personalizada/personalizada"
+import api from '../services/api.jsx';
+import axios from 'axios';
 
 export default function Main() {
     const [status, setStatus] = useState(false);
@@ -16,33 +18,41 @@ export default function Main() {
     const [subtitulo, setSubtitulo] = useState('');
     const [texto, setTexto] = useState('');
     const [link, setLink] = useState('');
+    const [imagem, setImagem] = useState('');
 
     useEffect(() => {
         async function getInfos() {
-            await fetch('http://localhost:3000/section/active')
-            .then((response) => response.json())
+            axios.get("https://plankton-app-e77tz.ondigitalocean.app/section/active")
             .then((response) => {
-                setStatus(response.data[0].status);
-                setTitulo(response.data[0].titulo);
-                setSubtitulo(response.data[0].subtitulo);
-                setTexto(response.data[0].texto);
-                setLink(response.data[0].link);
+                console.log(response.data.data[0])
+                let data = response.data.data[0];
+                if(response.data.statusCode === 200){
+                    data.status == 1 ? setStatus(true) : setStatus(false);
+                    setSubtitulo(data.subtitulo);
+                    setTexto(data.texto);
+                    setLink(data.link);
+                    setTitulo(data.titulo);
+                    setImagem(data.img);
+                }else{
+                    console.log("erro ao buscar dados")
+                }
             })
-            .catch((error) => {console.log("Erro")});
+            .catch((error) => {
+                console.log("erro ao buscar dados - ")
+            });
         }
         getInfos();
     }, []);
 
-
     return ( 
         <main>
             <Chamada />
-            <Personalizada titulo={titulo} subtitulo={subtitulo} link={link}/>
+            {status?<Personalizada titulo={titulo} subtitulo={subtitulo} link={link}/>:""}
             <PossoAjudar />
             <Especialidades />
             <Alertas />
             <QuemSou />
-            <Personalizada titulo={titulo} subtitulo={subtitulo} texto={texto} link={link}/>
+            {status?<Personalizada titulo={titulo} subtitulo={subtitulo} texto={texto} link={link} imagem={imagem}/>:""}
             <Depoimentos />
             <Perguntas />
             <Formulario />

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { Link } from 'react-scroll'
-
+import sabrinaLogo from '../../assets/sabrina_logo.png'
 
 export default function Header() {
 
@@ -14,7 +14,7 @@ export default function Header() {
             <div className='header'>
                 <nav className='navbar'>
                     <Link to="chamada" className='logo'>
-                        <img src='../../assets/sabrina_logo.png' alt='logo' />
+                        <img src={sabrinaLogo} alt='logo' />
                     </Link>
                     <div className='hamburger' onClick={handleClick}>
                         {click ? (<FaTimes size={30} style={{ color: '#A95D4A' }} />)

@@ -39,7 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 364px;
+    width: 100%;
     height: 258px;
     border-radius: 20px;
     background: #FCE0CB;
@@ -48,6 +48,7 @@
     letter-spacing: 0.06em;
     font-weight: bold;
     padding: 10px;
+    margin:0px
 }
 .titulo-subtitulo-alerta .titulo{
     font-size: 25px;
@@ -60,11 +61,15 @@
     margin-bottom: 50px;
 }
 .swiper-slide {
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: start;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: #A95D4A;
 }
 /* Desktop */
 @media screen and (min-width:1440px) {

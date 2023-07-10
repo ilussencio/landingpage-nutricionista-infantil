@@ -1,7 +1,7 @@
 import TituloSubtitulo from "../common/TituloSubtitulo"
 import titulosDescricoesSecoes from "../../../js/titulosDescricoesSecoes"
 import Animacao from "../../tools/Animacao"
-import foto from "../../../assets/sabrina_main.jpg"
+import foto from "../../../assets/sabrina_main.png"
 export default function QuemSou() {
     return (
         <section className="about-me" id="quemSou">
@@ -14,7 +14,7 @@ export default function QuemSou() {
                     <div className="about-me-flex-container">
                         <div className="about-me-image">
                             <div className="main-image">
-                                <img src={foto} alt="sabrina" width="100%" height="100%"/>
+                                <img src={foto} alt="sabrina"/>
                             </div>
                         </div>
                         <div className="about-me-content">
