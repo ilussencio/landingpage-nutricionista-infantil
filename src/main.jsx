@@ -5,7 +5,6 @@ import Login from './routes/LoginRoute.jsx'
 import ErrorPage from './routes/ErrorPage.jsx'
 import Leads from './routes/LeadsRoute.jsx'
 import Campanha from './routes/CampanhaRoute.jsx'
-import Leads from './routes/Leads.jsx'
 import Privacidade from "./routes/Privacidade.jsx";
 import Termos from "./routes/Termos.jsx";
 
