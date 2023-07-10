@@ -122,14 +122,16 @@ export default function Formulario() {
                             {errorTelefone?<label className="error">Digite um telefone</label>:null}
                         </div>
                     </div>
+                    {/*CRIAR FUNÇÃO PARA VALIDAR O CHECKBOX*/}
+                    <div className="gdpr">
+                        <input type="checkbox" id="gdpr" name="gdpr" value="gdpr" />
+                        <label htmlFor="gdpr">Concordo em receber comunicações de <span>Sabrina Penido</span> por e-mail ou telefone.</label>
+                    </div>
 
                     <input className="button" type="button" value="ENVIAR" onClick={() => validar()} />
                 </form>
 
             </div>
-           
-
-            
         </section>
     )
 }

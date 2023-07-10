@@ -11,6 +11,8 @@ import QuemSou from "./section_quem_sou/QuemSou"
 import Personalizada from "./section_personalizada/personalizada"
 import api from '../services/api.jsx';
 import axios from 'axios';
+import InstaFeed from "./section_instaFeed/InstaFeed.jsx";
+import CookieConsent from "../header/CookieConsent.jsx";
 
 export default function Main() {
     const [status, setStatus] = useState(false);
@@ -46,13 +48,17 @@ export default function Main() {
 
     return ( 
         <main>
+            <CookieConsent />
             <Chamada />
             {status?<Personalizada titulo={titulo} subtitulo={subtitulo} link={link}/>:""}
+            {/*<Personalizada titulo={titulo} subtitulo={subtitulo} link={link}/>*/}
             <PossoAjudar />
             <Especialidades />
             <Alertas />
             <QuemSou />
             {status?<Personalizada titulo={titulo} subtitulo={subtitulo} texto={texto} link={link} imagem={imagem}/>:""}
+            <InstaFeed />
+            {/*<Personalizada titulo={titulo} subtitulo={subtitulo} texto={texto} link={link}/>*/}
             <Depoimentos />
             <Perguntas />
             <Formulario />

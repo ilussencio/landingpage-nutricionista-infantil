@@ -5,6 +5,9 @@ import Login from './routes/LoginRoute.jsx'
 import ErrorPage from './routes/ErrorPage.jsx'
 import Leads from './routes/LeadsRoute.jsx'
 import Campanha from './routes/CampanhaRoute.jsx'
+import Leads from './routes/Leads.jsx'
+import Privacidade from "./routes/Privacidade.jsx";
+import Termos from "./routes/Termos.jsx";
 
 //Configurando router
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
@@ -22,6 +25,9 @@ import './css/posso_ajudar.css'
 import './css/footer.css'
 import './css/personalizada.css'
 import './css/admin.css'
+import './css/instaFeed.css'
+import './css/termos-privacidade.css'
+import './css/cookieconsent.css'
 
 
 const router  = createBrowserRouter([
@@ -30,6 +36,8 @@ const router  = createBrowserRouter([
     {path: "login", element: <Login />},
     {path: "leads", element: <Leads />},
     {path: "campanha", element: <Campanha />},
+    {path: "privacidade", element: <Privacidade />},
+    {path: "termos", element: <Termos />},
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
