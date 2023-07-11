@@ -91,9 +91,14 @@
 .section-formulario .gdpr {
     display: flex;
     flex-direction: row;
-    justify-items: left;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
+}
 
+.section-formulario .gdpr input{
+    width: 40px;
+    margin: 0px 10px
 }
 
 .section-formulario .button{

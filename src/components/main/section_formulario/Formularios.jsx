@@ -12,11 +12,13 @@ export default function Formulario() {
     const [email, setEmail] = useState("");
     const [telefone, setTelefone] = useState("");
     const [ddi, setDdi] = useState("+55");
+    const [termo, setTermo] = useState(false);
 
     const [errorNome, setErrorNome] = useState(false);
     const [errorEmail, setErrorEmail] = useState(false);
     const [errorDdi, setErrorDdi] = useState(false);
     const [errorTelefone, setErrorTelefone] = useState(false);
+    const [errorTermo, setErrorTermo] = useState(false);
 
     async function validar(){
         
@@ -28,8 +30,10 @@ export default function Formulario() {
             setErrorDdi(true);
         if(telefone === "")
             setErrorTelefone(true);
+        if(termo === false)
+            setErrorTermo(true);
 
-        if(nome !== "" && email !== "" && ddi !== "" && telefone !== ""){
+        if(nome !== "" && email !== "" && ddi !== "" && telefone !== "" && termo !== false){
             const teplateParams = {
                 nome: nome,
                 email: email,
@@ -124,9 +128,14 @@ export default function Formulario() {
                     </div>
                     {/*CRIAR FUNÇÃO PARA VALIDAR O CHECKBOX*/}
                     <div className="gdpr">
-                        <input type="checkbox" id="gdpr" name="gdpr" value="gdpr" />
+                        <input type="checkbox" className="gdpr_checkbox" id="gdpr" name="gdpr" value="gdpr" onChange={(e) => {
+                            if(e.target.checked === true)
+                                setErrorTermo(false)
+                            setTermo(e.target.checked)
+                            }}/>
                         <label htmlFor="gdpr">Concordo em receber comunicações de <span>Sabrina Penido</span> por e-mail ou telefone.</label>
                     </div>
+                    {errorTermo?<label className="error">Aceite os termos.</label>:null}
 
                     <input className="button" type="button" value="ENVIAR" onClick={() => validar()} />
                 </form>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Api from '../../../services/api.jsx'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -6,13 +6,14 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Editor } from "react-draft-wysiwyg";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import "draft-js/dist/Draft.css";
-import { EditorState, convertToRaw } from 'draft-js';
+import { ContentState, EditorState, convertToRaw, convertFromHTML } from 'draft-js';
 import draftToHtml from 'draftjs-to-html';
+import JoditEditor from "jodit-react";
+import e from 'cors';
 
 export default function Campanha() {
     const [campanhas, setCampanhas] = useState([])
-    const [editorState, setEditorState] = useState(EditorState.createEmpty());
-
+    
     const [id, setId] = useState('')
     const [link, setLink] = useState('')
     const [titulo, setTitulo] = useState('')
@@ -21,9 +22,11 @@ export default function Campanha() {
     const [texto, setTexto] = useState('')
     const [imagem, setImagem] = useState('')
     const [status, setStatus] = useState(0)
+    const [editorState, setEditorState] = useState('');
+    const editor = useRef(null);
 
     function selectCampanha(campanha) {
-        console.log(campanha.texto)
+        setEditorState(campanha.texto)
         setId(campanha['#'])
         setLink(campanha.link)
         setTitulo(campanha.titulo)
@@ -51,7 +54,7 @@ export default function Campanha() {
                     "img": imagem,
                     "subtitulo": subtitulo,
                     "titulo": titulo,
-                    "texto": draftToHtml(convertToRaw(editorState.getCurrentContent()))
+                    "texto": editorState
                 }
             ]
         });
@@ -65,7 +68,7 @@ export default function Campanha() {
             console.log(response)
             if (response.status === 200){
                 getCampanhas();
-                toast.success('Campanha cadastrada!', {
+                toast.success('Campanha atualizada!', {
                     position: "top-right",
                     autoClose: 5000,
                     hideProgressBar: false,
@@ -77,7 +80,7 @@ export default function Campanha() {
                 });
             }
             else
-                toast.error('Erro ao buscar campanhas', {
+                toast.error('Campanha não encontrada!', {
                     position: "top-right",
                     autoClose: 5000,
                     hideProgressBar: false,
@@ -93,7 +96,7 @@ export default function Campanha() {
             else if (error.response.status === 403)
                 window.location.href = '/login'
             else
-                toast.error('Erro ao buscar campanhas', {
+                toast.error('Campanha não encontrada!', {
                     position: "top-right",
                     autoClose: 5000,
                     hideProgressBar: false,
@@ -118,7 +121,7 @@ export default function Campanha() {
                     "img": imagem,
                     "subtitulo": subtitulo,
                     "titulo": titulo,
-                    "texto": draftToHtml(convertToRaw(editorState.getCurrentContent()))
+                    "texto": editorState
                 }
             ]
         });
@@ -144,7 +147,7 @@ export default function Campanha() {
                 });
             }
             else
-                toast.error('Erro ao buscar campanhas', {
+                toast.error('Campanha não encontrada!', {
                     position: "top-right",
                     autoClose: 5000,
                     hideProgressBar: false,
@@ -160,7 +163,7 @@ export default function Campanha() {
             else if (error.response.status === 403)
                 window.location.href = '/login'
             else
-                toast.error('Erro ao buscar campanhas', {
+                toast.error('Campanha não encontrada!', {
                     position: "top-right",
                     autoClose: 5000,
                     hideProgressBar: false,
@@ -172,7 +175,6 @@ export default function Campanha() {
                 });
         });
     }
-
     async function getCampanhas() {
 
         var data = JSON.stringify({
@@ -190,7 +192,7 @@ export default function Campanha() {
             if (response.status === 200)
                 setCampanhas(response.data)
             else
-                toast.error('Erro ao buscar campanhas', {
+                toast.error('Campanhas não encontrada!', {
                     position: "top-right",
                     autoClose: 5000,
                     hideProgressBar: false,
@@ -206,7 +208,7 @@ export default function Campanha() {
             else if (error.response.status === 403)
                 window.location.href = '/login'
             else
-                toast.error('Erro ao buscar campanhas', {
+                toast.error('Campanhas não encontrada!', {
                     position: "top-right",
                     autoClose: 5000,
                     hideProgressBar: false,
@@ -218,7 +220,6 @@ export default function Campanha() {
                 });
         });
     }
-
     async function ativarCampanha(campanha) {
         console.log("ID", campanha['#'])
         setCampanhas(campanhas.map((cap) => {
@@ -318,7 +319,7 @@ export default function Campanha() {
                     theme: "light",
                 });
             } else
-                toast.error('Erro ao buscar campanhas', {
+                toast.error('Error ao excluir campanha!', {
                     position: "top-right",
                     autoClose: 5000,
                     hideProgressBar: false,
@@ -334,7 +335,7 @@ export default function Campanha() {
             else if (error.response.status === 403)
                 window.location.href = '/login'
             else
-                toast.error('Erro ao buscar campanhas', {
+                toast.error('Error ao excluir campanha!', {
                     position: "top-right",
                     autoClose: 5000,
                     hideProgressBar: false,
@@ -393,27 +394,11 @@ export default function Campanha() {
 
                                     <div className="form-group">
                                         <label>Apresentação</label>
-                                        <Editor
-                                            defaultEditorState={editorState}
-                                            onEditorStateChange={setEditorState}
-                                            toolbarClassName="toolbarClassName"
-                                            wrapperClassName="wrapperClassName"
-                                            editorClassName="editorClassName"
-                                            toolbar={{
-                                                options: [
-                                                  "inline",
-                                                  "fontSize",
-                                                  "textAlign",
-                                                  "colorPicker",
-                                                  "link",
-                                                  "remove",
-                                                  "history"
-                                                ],
-                                                inline: {
-                                                  inDropdown: false,
-                                                  options: ["bold", "italic", "underline"]
-                                                }
-                                              }}
+
+                                        <JoditEditor
+                                            ref={editor}
+                                            value={editorState}
+                                            onChange={newContent => setEditorState(newContent)}
                                         />
                                     </div>
                                     
@@ -461,27 +446,10 @@ export default function Campanha() {
                                     <div className="form-group">
                                         <label>Apresentação</label>
                                         
-                                        <Editor
-                                            defaultEditorState={editorState}
-                                            onEditorStateChange={setEditorState}
-                                            toolbarClassName="toolbarClassName"
-                                            wrapperClassName="wrapperClassName"
-                                            editorClassName="editorClassName"
-                                            toolbar={{
-                                                options: [
-                                                  "inline",
-                                                  "fontSize",
-                                                  "textAlign",
-                                                  "colorPicker",
-                                                  "link",
-                                                  "remove",
-                                                  "history"
-                                                ],
-                                                inline: {
-                                                  inDropdown: false,
-                                                  options: ["bold", "italic", "underline"]
-                                                }
-                                              }}
+                                        <JoditEditor
+                                            ref={editor}
+                                            value={editorState}
+                                            onChange={newContent => setEditorState(newContent)}
                                         />
                                     </div>
                                     
@@ -533,10 +501,9 @@ export default function Campanha() {
                                     <tr key={index}>
                                         <th scope="row">{index}</th>
                                         <td>{campanha.titulo}</td>
-                                        <td>{campanha.status}</td>
+                                        <td>{campanha.status?"Ativo":""}</td>
                                         <td>
                                             <button style={{marginRight: "10px"}} className="btn btn-warning" onClick={() => {
-                                                
                                                 ativarCampanha(campanha); }
                                             }>Ativar</button>
                                             <button style={{marginRight: "10px"}} className="btn btn-primary" data-toggle="modal" data-target="#editarModal" onClick={() => { selectCampanha(campanha) }}>Editar</button>

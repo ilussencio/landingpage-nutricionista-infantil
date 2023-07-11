@@ -9,7 +9,7 @@ export default function Personalizada({titulo, subtitulo, texto, link, imagem}) 
                 <div className='personalizada_container'>
                     <TituloSubtitulo titulo={titulo} subtitulo={subtitulo} />
                     
-                    {!texto?<></>                        
+                    {!texto?<a className='personalizada_button curto' href={link} target='blank'>Clique e saiba mais!</a>                       
                     :<div className='personalizada_corpo '>
                         <div>
                             <div className='personalizada_texto' dangerouslySetInnerHTML={{ __html: texto }} />

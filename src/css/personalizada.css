@@ -23,6 +23,9 @@
     justify-content: center;
     margin-top: 50px;
 }
+.curto{
+    margin: 0;
+}
 .personalizada_button:hover{
     color: rgb(82, 82, 82);
 }
