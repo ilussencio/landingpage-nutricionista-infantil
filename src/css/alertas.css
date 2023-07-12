@@ -50,7 +50,7 @@
     padding: 10px;
     margin:0px
 }
-.titulo-subtitulo-alerta .titulo{
+.alertas .titulo{
     width: 1000px;
 }
 
@@ -81,7 +81,7 @@
 
 /* Tablet */
 @media screen and (min-width: 480px) and (max-width: 1440px) {
-    .titulo-subtitulo-alerta .titulo{
+    .alertas .titulo{
         width: 100%;
     }
     
@@ -96,7 +96,7 @@
     .swiper-button-prev, .swiper-button-next{
         display: none !important;
     }
-    .titulo-subtitulo-alerta .titulo{
+    .alertas .titulo{
         width: 100%;
     }
 }
