@@ -11,7 +11,7 @@ export default function Cartao({ titulo, descricao, imagem, id }) {
                 positions={['top', 'bottom', 'left', 'right']}
                 content={<div className="cartao-popover">{descricao}</div>}
             >
-                <div onClick={() => setIsPopoverOpen(!isPopoverOpen)}>
+                <div onMouseLeave={() => setIsPopoverOpen(false)} onClick={() => setIsPopoverOpen(!isPopoverOpen)}>
                     <img className="cartao-imagem" src={imagem} alt={titulo} />
                     <h3>{titulo}</h3>
                 </div>

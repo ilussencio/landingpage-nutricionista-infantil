@@ -1,7 +1,7 @@
 const titulosDescricoesSecoes = {
     chamada :{
         titulo:"POR QUE PRECISO DE UMA NUTRICIONISTA INFANTIL?",
-        subtitulo:"A saúde do seu filho é muito importante. Não deixe passar despercebido."
+        subtitulo:"A saúde do seu filho é muito importante, não deixe passar despercebido!"
     },
     possoAjudar:{
         titulo: "POSSO TE AJUDAR?",
@@ -13,7 +13,7 @@ const titulosDescricoesSecoes = {
     },
     alertas:{
         titulo: "Sinais indicativos de que é hora de contar com um PROFISSIONAL!",
-        subtitulo: "Agora vamos aos sinais:"
+        subtitulo: "Fique atento:"
     },
     quemSou:{
         titulo: "QUEM SOU EU?",
@@ -21,15 +21,15 @@ const titulosDescricoesSecoes = {
     },
     depoimentos: {
         titulo: "DEPOIMENTOS",
-        subtitulo: "Confira o que alguns de nossos clientes estão dizendo sobre o nosso acompanhamento"
+        subtitulo: "Confira o que alguns clientes estão dizendo sobre o acompanhamento nutricional:"
     },
     perguntas:{
-        titulo: "PEGUNTAS FREQUENTES",
-        subtitulo: "Perguntas frequentemente feitas pelos nossos pacientes"
+        titulo: "PERGUNTAS FREQUENTES",
+        subtitulo: "Frequentemente os pacientes perguntam:"
     },
     formulario:{
         titulo:"",
-        subtitulo: "Alimente seus filhos com cuidado e carinho. Preencha nosso formulário e receba dicas de nutrição infantil!"
+        subtitulo: "Alimente seus filhos com cuidado e carinho. Preencha o formulário e receba dicas de nutrição infantil!"
     }
 }
 export default titulosDescricoesSecoes;

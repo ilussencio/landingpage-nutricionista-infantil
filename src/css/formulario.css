@@ -110,7 +110,7 @@
 }
 
 .section-formulario .error{
-    color: black;
+    color: rgb(255, 197, 197);
     font-size: 12px;
     margin-top: 5px;
     margin-bottom: 5px;

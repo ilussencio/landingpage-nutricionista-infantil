@@ -51,16 +51,14 @@ export default function Main() {
             <CookieConsent />
             <Chamada />
             {status?<Personalizada titulo={titulo} subtitulo={subtitulo} link={link}/>:""}
-            {/*<Personalizada titulo={titulo} subtitulo={subtitulo} link={link}/>*/}
             <PossoAjudar />
             <Especialidades />
             <Alertas />
             <QuemSou />
-            {status?<Personalizada titulo={titulo} subtitulo={subtitulo} texto={texto} link={link} imagem={imagem}/>:""}
             <InstaFeed />
-            {/*<Personalizada titulo={titulo} subtitulo={subtitulo} texto={texto} link={link}/>*/}
             <Depoimentos />
             <Perguntas />
+            {status?<Personalizada titulo={titulo} subtitulo={subtitulo} texto={texto} link={link} imagem={imagem}/>:""}
             <Formulario />
         </main>
     )

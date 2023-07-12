@@ -23,7 +23,7 @@ const possoAjudarCards = {
     bebes : {
         titulo:"BEBÊS",
         listaItems:[
-            "Entre 5 a 12 meses que precisam de orientação",
+            "De 5 a 12 meses que precisam de orientação",
             "Até 2 anos com dificuldades de alimentação"],
         color:"#438058"
     }

@@ -56,9 +56,14 @@
 
 /*Tablet*/
 @media screen and (min-width: 767px) and (max-width:1023px) {
-    
     .depoimentos-conteudo{
         flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width:1167px) {
+    .card-2{
+        display: none;
     }
 }
 
@@ -73,5 +78,8 @@
     }
     .depoimentos-conteudo{
         flex-direction: column;
+    }
+    .card-2{
+        display: inline;
     }
 }

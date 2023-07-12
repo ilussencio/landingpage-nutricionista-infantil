@@ -11,7 +11,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
     
-
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
@@ -48,20 +47,20 @@ export default function Alertas() {
                 }}
                 modules={[Autoplay, Pagination, Navigation]}
             >
-                <SwiperSlide><Card numero={1} texto={"Não aceite novos alimentos, come sempre a mesma coisa."} /></SwiperSlide>
+                <SwiperSlide><Card numero={1} texto={"Não aceita novos alimentos, come sempre a mesma coisa."} /></SwiperSlide>
                 <SwiperSlide><Card numero={2} texto={"Rejeita grupos alimentares inteiros."} /></SwiperSlide>
                 <SwiperSlide><Card numero={3} texto={"Você frequentemente substitui refeições da criança."} /></SwiperSlide>
-                <SwiperSlide><Card numero={4} texto={"Faz ansia de vomito para determinados alimentos."} /></SwiperSlide>
-                <SwiperSlide><Card numero={5} texto={"Tem grande preferência por determinadas alimentos."} /></SwiperSlide>
-                <SwiperSlide><Card numero={6} texto={"Sempre Faz birra nas horas das refeições."} /></SwiperSlide>
-                <SwiperSlide><Card numero={7} texto={"Sua criança não esta alimentando bem."} /></SwiperSlide>
+                <SwiperSlide><Card numero={4} texto={"Faz ânsia de vômito para determinados alimentos."} /></SwiperSlide>
+                <SwiperSlide><Card numero={5} texto={"Tem grande preferência por determinados alimentos."} /></SwiperSlide>
+                <SwiperSlide><Card numero={6} texto={"Sempre faz birra na hora das refeições."} /></SwiperSlide>
+                <SwiperSlide><Card numero={7} texto={"Sua criança não está se alimentando bem."} /></SwiperSlide>
                
             </Swiper>
             
             <div className="titulo-subtitulo-alerta">
                 <TituloSubtitulo 
-                titulo={"E aí, você se identificou com algum desses sinais ?"} 
-                subtitulo={"Se SIM, então é hora de procurar um atendimento nutricional para o seu filho."}/>
+                titulo={"E aí, você se identificou com alguns desses sinais?"} 
+                subtitulo={"Se SIM, então é hora de procurar um atendimento nutricional para o seu filho!"}/>
 
             </div>            
 

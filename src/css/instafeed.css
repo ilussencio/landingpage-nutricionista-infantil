@@ -7,10 +7,27 @@
     padding-bottom: 60px;
     padding-left: 30px;
     padding-right: 30px;
+    display: flex;
+    flex: column;
+    justify-content: center;
+}
+
+.instafeed {
+    width: 1200px;
+    list-style: none;
+    text-align: center;
+}
+/* Tablet */
+@media screen and (min-width: 480px) and (max-width: 1440px) {
+    .instafeed {
+        width: 100%;
+    }
 }
 
 
-.instafeed {
-    list-style: none;
-    text-align: center;
+/*Mobile*/
+@media screen and (max-width: 766px) {
+    .instafeed {
+        width: 100%;
+    }
 }

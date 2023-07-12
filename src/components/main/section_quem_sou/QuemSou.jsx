@@ -12,29 +12,24 @@ export default function QuemSou() {
                             {titulosDescricoesSecoes["quemSou"].subtitulo}/>
                     </div>
                     <div className="about-me-flex-container">
-                        <div className="about-me-image">
-                            <div className="main-image">
-                                <img src={foto} alt="sabrina"/>
-                            </div>
+                        <div className="main-image">
+                            <img src={foto} alt="sabrina"/>
                         </div>
+                       
                         <div className="about-me-content">
                             <div className="text-one">
-                                Me chamo Sabrina Penido, sou a nutricionista Materno Infantil que vai te orientar e de
-                                mãos dadas vamos
-                                trilhar um delicioso e nutritivo caminho, cheio de aprendizados e conquistas.
+                                Me chamo Sabrina Penido, sou a nutricionista Materno Infantil que vai te orientar e, de
+                                mãos dadas, vamos trilhar um delicioso e nutritivo caminho, cheio de aprendizados e conquistas.
                             </div>
                             <div className="text-two">
-                                Formada em Nutrição pela Universidade Antonio Carlos, pós graduanda em Nutrição Materno
-                                Infantil
+                                Formada em Nutrição pela Universidade Antônio Carlos, pós graduanda em Nutrição Materno Infantil.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-
             <Animacao css_identifier=".about-me-content" easing_type="ease-in" duration={800}/>
-
             <Animacao css_identifier=".about-me-image" easing_type="ease-in" duration={400}/>
         </section>
     )

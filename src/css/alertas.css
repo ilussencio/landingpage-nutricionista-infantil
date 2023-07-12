@@ -51,7 +51,7 @@
     margin:0px
 }
 .titulo-subtitulo-alerta .titulo{
-    font-size: 25px;
+    width: 1000px;
 }
 
 .swiper {
@@ -81,6 +81,9 @@
 
 /* Tablet */
 @media screen and (min-width: 480px) and (max-width: 1440px) {
+    .titulo-subtitulo-alerta .titulo{
+        width: 100%;
+    }
     
 }
 
@@ -88,6 +91,12 @@
 /*Mobile*/
 @media screen and (max-width: 766px) {
     .card_descricao{
+        width: 100%;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        display: none !important;
+    }
+    .titulo-subtitulo-alerta .titulo{
         width: 100%;
     }
 }

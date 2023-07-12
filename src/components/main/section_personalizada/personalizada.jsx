@@ -18,8 +18,7 @@ export default function Personalizada({titulo, subtitulo, texto, link, imagem}) 
                         <div>
                             <img className='personalizada_image' src={imagem}/>
                         </div>
-                    </div>}                 
-                    
+                    </div>}
                 </div>
             </section>
     );

@@ -398,7 +398,7 @@ export default function Campanha() {
                                         <JoditEditor
                                             ref={editor}
                                             value={editorState}
-                                            onChange={newContent => setEditorState(newContent)}
+                                            onBlur={newContent => setEditorState(newContent)}
                                         />
                                     </div>
                                     
@@ -449,7 +449,7 @@ export default function Campanha() {
                                         <JoditEditor
                                             ref={editor}
                                             value={editorState}
-                                            onChange={newContent => setEditorState(newContent)}
+                                            onBlur={newContent => setEditorState(newContent)}
                                         />
                                     </div>
                                     

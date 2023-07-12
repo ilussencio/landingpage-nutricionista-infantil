@@ -78,7 +78,6 @@
 
 .about-me-flex-container .about-me-image {
     width: 400px;
-    height: 400px;
 }
 
 @media (max-width: 500px) {
@@ -93,7 +92,7 @@
     justify-content: center;
     
 }
-.about-me-flex-container .about-me-image .main-image img {
+.about-me-flex-container .main-image img {
     width: 170px;
     transform: scaleX(-1);
 }
@@ -105,16 +104,17 @@
     text-align: justify;
 }
 
-.about-me-flex-container .about-me-image .main-image:hover {
+.about-me-flex-container .main-image:hover {
     transform-origin: top center;
     transform: scale(1.1);
     border-radius: 25px;
 }
 
-.about-me-flex-container .about-me-image .main-image img {
+.about-me-flex-container .main-image img {
     -o-object-fit: cover;
     object-fit: cover;
     transition: all 0.2s ease-out;
+    margin: 0px 50px;
 }
 
 .about-me-flex-container .about-me-content {
@@ -153,9 +153,8 @@
     .about-me-flex-container .about-me-content .text-one{
         font-size: 16px;
     }
-    .about-me-flex-container .about-me-image .main-image {
+    .about-me-flex-container .main-image {
         width: 100%;
-        height: 100%;
         top: 0;
         left: 0;
     }
@@ -165,12 +164,18 @@
         justify-content: center;
         align-items: center;
     }
-    .about-me-flex-container .about-me-image .main-image:hover {
+    .about-me-flex-container .main-image:hover {
         transform-origin: top center;
         transform: scale(1.1);
         border-radius: 25px;
     }
     .about-me .about-me-container {
         padding-bottom: 50px;
+    }
+    .about-me-flex-container .main-image{
+        text-align: center;
+    }
+    .about-me-flex-container .main-image img {
+        margin: 0px;
     }
 }
