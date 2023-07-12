@@ -1,9 +1,26 @@
+@font-face {
+    src: url('../../public/font/Grandista Regular.otf') format('opentype');
+    font-family: grandista;
+}
+
+.frase-instafeed {
+    font-family: grandista;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    background-image: linear-gradient(60deg, #F9C556, #F97621, #EA484C, #D72F78, #A93AB5, #5B62D1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
 
 .insta-bckgrd {
     background: url('../../public/instaWatermark.png');
     background-repeat: repeat;
     background-size: 30px 30px;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-bottom: 60px;
     padding-left: 30px;
     padding-right: 30px;
