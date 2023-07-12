@@ -73,12 +73,6 @@
     .personalizada_corpo{
         flex-direction: column-reverse;
     }
-    .personalizada h1{
-        font-size: 20px;
-    }
-    .personalizada p{
-        font-size: 15px;
-    }
     .personalizada_container{
         width: 90%;
     }
