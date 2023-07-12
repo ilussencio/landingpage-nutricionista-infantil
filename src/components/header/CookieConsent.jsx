@@ -22,7 +22,7 @@ export default function CookieConsent() {
                 <p>Este site usa cookies para lhe garantir uma melhor experiência. Ao prosseguir você estará concordando com a nosssa política de privacidade. Em caso de dúvida clique em saiba mais...</p>
             </div>
             <button className='C-button' id='Cookie_btn' onClick={()=> checkCookie()}>Aceitar Cookies!</button>
-            <a className='C-button outl' href='http://localhost:5173/privacidade'>Saiba Mais</a>
+            <a className='C-button outl' href='https://www.sabrinapenido.com.br/privacidade'>Saiba Mais</a>
         </div>
     )
 
