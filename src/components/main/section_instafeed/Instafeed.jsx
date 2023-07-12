@@ -2,7 +2,7 @@ import TituloSubtitulo from "../common/TituloSubtitulo"
 
 export default function InstaFeed() {
     return (
-        <div className="insta-bckgrd">
+        <div className="insta-bckgrd" id="instafeed">
             <TituloSubtitulo titulo={"Sabrina no Instagram"} subtitulo={"Para mais conteúdo siga meu perfil: @SabrinaPenido"}/>
             <br></br>
             <div className="instafeed">

@@ -34,6 +34,9 @@ export default function Header() {
                             <Link to="quemSou" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Quem sou</Link>
                         </li>
                         <li className='nav-item'>
+                            <Link to="instafeed" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Instagram</Link>
+                        </li>
+                        <li className='nav-item'>
                             <Link to="depoimentos" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Depoimentos</Link>
                         </li>
                         <li className='nav-item'>
